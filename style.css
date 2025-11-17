@@ -1,8 +1,157 @@
-/* CSS BY (add your name) */
+/* CSS BY Lilly/Liliana Mena */
 /* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /* ROOT VARIABLES */
+:root{
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+	/* background */
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+	/* lettering */
+    --soft-white: #FAF9F6; 
+	--box-shadow: 0px 3px 9px 1px rgba(43,43,43,0.5);
+    --font: "Playfair Display";
+}
 /* GLOBAL STYLES (mobile first/small) */
+
+body{
+	background-color: var(--linen);
+	display:grid;
+	grid-template-columns: 1fr;
+	font-family: var(--font);
+	grid-template-areas:
+	"header"
+	"nav"
+	"main"
+	"footer";
+	gap: 1.5rem; 
+	line-height: 1.5;
+	margin: auto;	
+}
+header,footer{
+	background-color: var(--midnight-blue);
+	color:var(--soft-white);
+	font-size: 1rem;
+	text-align: center;
+}
+h1{
+	font-size: 4em;
+	font-weight: bold;
+}
+
+header > p{
+	font-style: italic;
+	padding: 10px 0;
+}
+ nav ul{
+	display:grid; 
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: var(--champagne-gold);
+	color: var(--midnight-blue);
+	font-weight: bolder;
+	padding: 6px 0;
+	font-size:  large;
+	
+ }
+h2{
+	font-size: 1.5em;
+}
+h3{ 
+	font-size: 1.3em;
+	font-weight: bold;
+}
+main{
+	/* margin: 0 auto; */
+	display: grid;
+	justify-content: center;
+}
+/* main > *{
+	margin: 2rem; 
+}  */
+
+main > section {
+	border-bottom: 2px solid var(--champagne-gold);
+	padding:  5px;
+}
+
+main > section > *{
+	display: grid;
+	gap: 15px;
+	padding: 5px;
+}
+
+section > div > div{
+	border-radius: 2%;
+	box-shadow: var(--box-shadow);
+
+}  
+.gr{
+	background-color: var(--olive-green);
+	color: var(--soft-white);
+	padding: 15px;
+}
+.enclose{
+	background-color: var(--soft-white);
+	font-style: italic;
+	text-align: center;
+	padding: 0;
+}
+
+main ul{
+	list-style-type: disc;
+}
 /* MEDIA QUERY (medium) */
 /* MEDIA QUERY (large) */
 /* MEDIA QUERY (xl) */
