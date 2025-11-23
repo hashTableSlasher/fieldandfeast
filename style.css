@@ -103,7 +103,6 @@ header ul{
 	background-color: var(--champagne-gold);
 	color: var(--midnight-blue);
 	font-weight: 850;
-    kerning: normal;
 	font-size:  large;
     padding: 1% 0;
 }
@@ -168,15 +167,12 @@ section > div > *{
     display:grid;
     grid-template-columns: 1fr;
     justify-content: space-evenly;
-   gap:space-between;
-   gap:20px; 
+    gap:20px; 
 
 }
 .gr{
     height: 100%; 
     display: grid;
-    /* align-content: stretch; */
-    align-content: bottom;  
 	background-color: var(--olive-green);
 	color: var(--soft-white);
     padding:15px;  
@@ -201,7 +197,6 @@ main div img{
     justify-items: center; 
     align-content: start;
     background-color: var(--soft-white);
-    align-items: bottom;
     }
 
 
@@ -264,7 +259,6 @@ footer a{
         display: grid;
         justify-content: center;
         justify-items: center;
-        /* align-items: center; */
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
@@ -277,7 +271,6 @@ footer a{
         display: grid;
         justify-content: center;
         justify-items: center;
-        /* align-items: center; */
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
