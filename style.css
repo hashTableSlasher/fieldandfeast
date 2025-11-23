@@ -238,7 +238,7 @@ footer a{
     color: var(--champagne-gold);
 }
 
-
+/* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px){
     .enclose.p{
         font-size: medium;
@@ -265,8 +265,6 @@ footer a{
 }
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 900px){
-    body{line-height: 1.5;}
-     
         .second{
         display: grid;
         justify-content: center;
@@ -275,6 +273,7 @@ footer a{
         gap: 20px;
     }
 }
+/* MEDIA QUERY (xl) */
 @media screen and (min-width:1200px){
         .first{
         display: grid;
