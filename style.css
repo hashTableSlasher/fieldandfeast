@@ -101,10 +101,15 @@ header ul{
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	background-color: var(--champagne-gold);
-	color: var(--midnight-blue);
 	font-weight: 850;
-	font-size:  large;
     padding: 1% 0;
+}
+header ul li a{
+    color: var(--midnight-blue);
+    text-decoration: none;
+    font-size:  large;
+
+
 }
 
 header p{
